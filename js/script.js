@@ -1,1 +1,1 @@
-alert('js is connected')
+// alert('js is connected')
