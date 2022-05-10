@@ -1,3 +1,9 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    }
+
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +11,38 @@ body {
     color: white;
 }
 
-h1 {
+h2 {
     font-family: "Londrina Outline";
     font-size: 100px;
+    padding: 30px 0 30px 0;
+    /* background-color: #b22d0f;
+    background-image: linear-gradient(45deg, white, #f5160e);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; */
+    background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #a42c6c 16.666%, 
+    #e5e1e0 16.666%, 
+    #15391d 33.333%, 
+    #CA4346 33.333%, 
+    #CA4246 50%, 
+    #a42c6c 50%, 
+    #a42c6c 66.666%, 
+    #15391d 66.666%, 
+    #e5e1e0 83.333%, 
+    #CA4246 83.333%);
+}
+
+h3 {
+    padding: 30px;
+}
+
+img {
+    border-radius: 30px;
+    border: dotted 3px white;
+    padding: 15px;
 }
