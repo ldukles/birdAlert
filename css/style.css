@@ -25,16 +25,16 @@ h2 {
     background: #CA4246;
   background-color: #CA4246;
   background: conic-gradient(
-    #a42c6c 16.666%, 
-    #e5e1e0 16.666%, 
-    #15391d 33.333%, 
-    #CA4346 33.333%, 
-    #CA4246 50%, 
+    #a42c6c 16%, 
+    #15392a 16%, 
+    #3f8e6d 33%, 
+    #CA4346 33%, 
+    #CA4346 50%, 
     #a42c6c 50%, 
-    #a42c6c 66.666%, 
-    #15391d 66.666%, 
-    #e5e1e0 83.333%, 
-    #CA4246 83.333%);
+    #a42c6c 66%, 
+    #15392a 66%, 
+    #3f8e6d 83%, 
+    #CA4246 83%);
 }
 
 h3 {
@@ -43,6 +43,6 @@ h3 {
 
 img {
     border-radius: 30px;
-    border: dotted 3px white;
-    padding: 15px;
+    border: solid 3px white;
+    /* padding: 5px; */
 }

@@ -2,6 +2,7 @@ var settings = {
   url: "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full",
   method: "GET",
   timeout: 0,
+  data: {back: 1, detail: 'simple', maxResults: 10},
   headers: {
     "X-eBirdApiToken": "g239pf3095hj",
   },
@@ -23,6 +24,7 @@ const $howMany = $("#howMany");
 const $obsValid = $("obsValid");
 const $input = $(`input[type=text]`);
 const $form = $("form");
+
 
 // Event Listeners
 $form.on("submit", handleGetData);
