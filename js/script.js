@@ -1,19 +1,19 @@
-var settings = {
-  url: "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full",
-  method: "GET",
-  timeout: 0,
-  data: {back: 1, detail: 'simple', maxResults: 10},
-  headers: {
-    "X-eBirdApiToken": "g239pf3095hj",
-  },
-};
+// var URL = {
+//   url: "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full",
+//   method: "GET",
+//   timeout: 0,
+//   data: { back: 1, detail: "simple", maxResults: 10 },
+//   headers: {
+//     "X-eBirdApiToken": "g239pf3095hj",
+//   },
+// };
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-//   Variables
-const URL =
-  "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full";
+// $.ajax(URL).done(function (response) {
+//   console.log(response);
+// });
+// Variables
+// const URL =
+//   "https://api.ebird.org/v2/data/obs/'${userInput}'/recent/notable?detail=full";
 
 // Element References
 const $comName = $("#comName");
@@ -24,7 +24,6 @@ const $howMany = $("#howMany");
 const $obsValid = $("obsValid");
 const $input = $(`input[type=text]`);
 const $form = $("form");
-
 
 // Event Listeners
 $form.on("submit", handleGetData);
@@ -51,7 +50,28 @@ function handleGetData(event) {
     }
   );
 }
+function render() {
+  $comName.text(birdData.comName);
+  $sciName.text(birdData.sciName);
+  $locName.text(birdData.locName);
+  $obsDt.text(birdData.obsDt);
+  $howMany.text(birdData.howMany);
+  $obsValid.text(birdData.obsValid);
+}
 
+var URL = {
+  url: "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full",
+  method: "GET",
+  timeout: 0,
+  data: { back: 1, detail: "simple", maxResults: 10 },
+  headers: {
+    "X-eBirdApiToken": "g239pf3095hj",
+  },
+};
+
+// $.ajax(URL).done(function (response) {
+//   console.log(response);
+// });
 //   All elements
 //   {
 //     "speciesCode": "libher",
