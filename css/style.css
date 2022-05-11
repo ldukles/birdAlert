@@ -37,3 +37,7 @@ img {
     border: solid 3px white;
     padding: 3px;
 }
+
+.container {
+    padding: 40px;
+}

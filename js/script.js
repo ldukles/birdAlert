@@ -1,3 +1,6 @@
+var $p = $('p');
+$p.hide();
+
 var settings = {
   "url": "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full",
   "method": "GET",
@@ -8,9 +11,9 @@ var settings = {
   },
 };
 
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+// });
 //   Variables
 const URL = "https://api.ebird.org/v2/data/obs/US-NY/recent/notable?detail=full"
 
@@ -26,7 +29,7 @@ const $input = $(`input[type=text]`);
 const $form = $("form");
 
 // Event Listeners
-$form.on("submit", handleGetData);
+$form.on("go", handleGetData);
 
 // Functions
 function handleGetData(event) {
@@ -50,3 +53,12 @@ $obsValid.text(data.obsValid);
   }
 );
 }
+
+function render() {
+  $comName.text(birdData.comName);
+  $sciName.text(birdData.sciName);
+  $locName.text(birdData.locName);
+  $obsDt.text(birdData.obsDt);
+  $howMany.text(birdData.howMany);
+  $obsValid.text(birdData.obsValid);
+};
