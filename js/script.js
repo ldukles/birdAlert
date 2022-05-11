@@ -4,15 +4,16 @@
 
 
 // API Settings
-var settings = {
-  "url": "https://api.ebird.org/v2/data/obs/{{regionCode}}/recent/notable?detail=full",
-  "method": "GET",
-  "timeout": 0,
-  "data": { back: 1, maxResults: 10 },
-  "headers": {
-    "X-eBirdApiToken": "g239pf3095hj",
-  },
-};
+// var settings = {
+//   "url": `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
+//   "method": "GET",
+//   "timeout": 0,
+//   "data": {back: 1, maxResults: 10},
+//   "headers": {
+//     "X-eBirdApiToken": "g239pf3095hj",
+//   },
+// };
+
 
 // Checking API Connection
 // $.ajax(settings).done(function (response) {
@@ -36,20 +37,28 @@ const $form = $("form");
 
 
 // Event Listeners
-$form.on("submit", handleGetData);
+$form.on('submit', handleGetData);
 
 
 // Functions
 function handleGetData(event) {
   event.preventDefault();
   // data expansion to include form submissions
-  const URL =
-  `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`;
   const userInput = $input.val();
+  // let URL = `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`;
+ 
 
-  $.ajax(URL).then(
+  $.ajax({
+    url: `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
+  method: "GET",
+  timeout: 0,
+  data: {back: 1, maxResults: 10},
+  headers: {
+    "X-eBirdApiToken": "g239pf3095hj",
+  }}).then(
     function (data) {
-      console.log("rare birds dettected");
+      
+      console.log("rare birds detected");
       $comName.text(data.Common);
       $sciName.text(data.Scientific);
       $locName.text(data.Location);
@@ -64,7 +73,7 @@ function handleGetData(event) {
   );
 }
 
-// function render() {
+// function render(data) {
 //   $comName.text(birdData.comName);
 //   $sciName.text(birdData.sciName);
 //   $locName.text(birdData.locName);
