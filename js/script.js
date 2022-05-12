@@ -33,8 +33,7 @@ $form.on('submit', handleGetData);
 function handleGetData(event) {
   event.preventDefault();
   // data expansion to include form submissions
-  const userInput = $input.val();
- 
+  const userInput = $input.val(); 
 
   $.ajax(URL = {
     url: `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
@@ -57,6 +56,11 @@ function handleGetData(event) {
       $obsDt.text(data[0].obsDt)
       $howMany.text(data[0].howMany)
       $obsValid.text(data[0].obsValid)
+      // $('main').append(`<main>"${$("data")}"</main>`)
+
+      // console.log(data)
+      // let $data = $(data.value())
+      // console.log($data.value())
       
     },
     
