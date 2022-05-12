@@ -5,6 +5,7 @@
 <img src="./img/screenShot.png" alt="bird Alert main page"/>
 
 ## Description
+User can enter their state abbreviation to populate a list of rare/notable birds reported in that area. User will be able to see species name, location, time of sighting, date of observation, how many were seen, and if the sighting was verified or not.
 
 ## Table of Contents
 
@@ -16,12 +17,12 @@
 * [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
-*HTML5
-*CSS3
-*JavaScript
-*jQuery
-*Google Fonts
-*ebird API 2.0
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+* Google Fonts
+* ebird API 2.0
 
 ## Features
 Users can display a list of rare/notable bird species sighted in their state
@@ -42,6 +43,10 @@ Connect weather data api (specifically wind and precipitation) to determine whet
 
 ## <a name="deployment"></a>Deployed Link
 
+
 * You can view the repository:
+https://github.com/ldukles/birdAlert
+
+
 ## Works Cited:
 https://www.codeproject.com/Questions/854010/how-to-send-api-url-with-api-key-auth-as-header-us
