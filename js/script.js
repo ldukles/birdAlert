@@ -53,7 +53,7 @@ function handleGetData(event) {
     url: `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
   method: "GET",
   timeout: 0,
-  data: {back: 1, maxResults: 1},
+  data: {back: 1, maxResults: 10},
   headers: {
     "X-eBirdApiToken": "g239pf3095hj",
   }}).then(
@@ -74,6 +74,8 @@ function handleGetData(event) {
     }
   );
 }
+
+console.log([0])
 
 // function append(data) {
 //   $comName.text(birdData.comName);
