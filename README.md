@@ -25,7 +25,7 @@ User can enter their state abbreviation to populate a list of rare/notable birds
 * ebird API 2.0
 
 ## Features
-Users can display a list of rare/notable bird species sighted in their state
+Users can display a list of rare/notable bird species sighted in their state by typing their state initials into a input bar.
 
 
 ## Wireframe
@@ -49,4 +49,12 @@ https://github.com/ldukles/birdAlert
 
 
 ## Works Cited:
+Paul Chapman, Julian Beard, Jacky Cheng, Bradley Hazel, Charles Co for helping through some issues and pointing me in the right direction
+
+
 https://www.codeproject.com/Questions/854010/how-to-send-api-url-with-api-key-auth-as-header-us
+For working on how to incorporate my key and make the api connect to the web application
+
+
+https://fossheim.io/writing/posts/css-text-gradient/
+For awesome CSS styling ideas!
