@@ -45,5 +45,8 @@ img {
 
 main {
     padding: 20px;
-    
+}
+
+#comName, #sciName, #locName, #obsDt, #howMany, #obsValid {
+    color: #CA4246;
 }
