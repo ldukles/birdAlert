@@ -57,36 +57,32 @@ function handleGetData(event) {
     "X-eBirdApiToken": "g239pf3095hj"},
  
   }).then(
- 
+    
     function (data) {
       
       console.log("rare birds detected");
-      console.log(data)
+      
   
-      $comName.text(data.comName);
-      $sciName.text(data.sciName);
-      $locName.text(data.locName);
-      $obsDt.text(data.obsDt);
-      $howMany.text(data.howMany);
-      $obsValid.text(data.obsValid);
+      $comName.text(data.comName)
+      $comName.text(data.comName)
+      $sciName.text(data.sciName)
+      $locName.text(data.locName)
+      $obsDt.text(data.obsDt)
+      $howMany.text(data.howMany)
+      $obsValid.text(data.obsValid)
+      $('main').append(`<main>"${$("data")}"</main>`)
+
+      console.log(data)
+      let $data = $(data.value())
+      console.log($data.value())
       
     },
     
+  
+
     function (error) {
       console.log("something ain't right");
       console.log(error);
     }
   );
 }
-
-
-
-// function render(data) {
-//   data.results[0].comName
-//   $comName.text(data.comName);
-//   $sciName.text(data.sciName);
-//   $locName.text(birdData.locName);
-//   $obsDt.text(data.obsDt);
-//   $howMany.text(data.howMany);
-//   $obsValid.text(data.obsValid);
-// }
