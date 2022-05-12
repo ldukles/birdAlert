@@ -16,25 +16,29 @@
 * [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
-HTML5
-CSS3
-JavaScript
-jQuery
-Google Fonts
-ebird API 2.0
+*HTML5
+*CSS3
+*JavaScript
+*jQuery
+*Google Fonts
+*ebird API 2.0
 
 ## Features
+Users can display a list of rare/notable bird species sighted in their state
+
 
 ## Wireframe
 
 
 ## Trello Planning
+https://trello.com/b/kmPxWhWo/bird-alert
 
 ## <a name="design"></a>Design
 Design elements implemented using HTML5, CSS3, and google fonts
 
 ## <a name="nextsteps"></a>Project Next Steps
-Use latitude and longitude to find birds closest to user
+Use latitude and longitude to find rare bird species closest to user
+Connect weather data api (specifically wind and precipitation) to determine whether it is ideal conditions for migration
 
 ## <a name="deployment"></a>Deployed Link
 
