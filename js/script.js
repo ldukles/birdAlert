@@ -53,10 +53,14 @@ function handleGetData(event) {
     url: `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
   method: "GET",
   timeout: 0,
-  data: {back: 1, maxResults: 10},
+  data: {back: 1, maxResults: 1},
   headers: {
-    "X-eBirdApiToken": "g239pf3095hj",
-  }}).then(
+    "X-eBirdApiToken": "g239pf3095hj"},
+  success: function(data) {
+    console.log(data)
+  }
+  });
+  $.ajax().then(
     function (data) {
       
       console.log("rare birds detected");
@@ -73,18 +77,18 @@ function handleGetData(event) {
       console.log(error);
     }
   );
+  }
+
+
+
+function append(data) {
+  $comName.text(birdData.comName);
+  $sciName.text(birdData.sciName);
+  $locName.text(birdData.locName);
+  $obsDt.text(birdData.obsDt);
+  $howMany.text(birdData.howMany);
+  $obsValid.text(birdData.obsValid);
 }
-
-console.log([0])
-
-// function append(data) {
-//   $comName.text(birdData.comName);
-//   $sciName.text(birdData.sciName);
-//   $locName.text(birdData.locName);
-//   $obsDt.text(birdData.obsDt);
-//   $howMany.text(birdData.howMany);
-//   $obsValid.text(birdData.obsValid);
-// }
 
 
 //   All elements
