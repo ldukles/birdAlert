@@ -61,20 +61,19 @@ function handleGetData(event) {
     function (data) {
       
       console.log("rare birds detected");
-      
+      // console.log(data[0].comName)
   
-      $comName.text(data.comName)
-      $comName.text(data.comName)
-      $sciName.text(data.sciName)
-      $locName.text(data.locName)
-      $obsDt.text(data.obsDt)
-      $howMany.text(data.howMany)
-      $obsValid.text(data.obsValid)
-      $('main').append(`<main>"${$("data")}"</main>`)
+      $comName.text(data[0].comName)
+      $sciName.text(data[0].sciName)
+      $locName.text(data[0].locName)
+      $obsDt.text(data[0].obsDt)
+      $howMany.text(data[0].howMany)
+      $obsValid.text(data[0].obsValid)
+      // $('main').append(`<main>"${$("data")}"</main>`)
 
-      console.log(data)
-      let $data = $(data.value())
-      console.log($data.value())
+      // console.log(data)
+      // let $data = $(data.value())
+      // console.log($data.value())
       
     },
     
