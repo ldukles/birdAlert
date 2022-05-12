@@ -38,6 +38,7 @@ img {
     padding: 3px;
 }
 
-.container {
-    padding: 40px;
+.text {
+    width: 150px;
+    text-align: center;
 }

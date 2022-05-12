@@ -29,7 +29,7 @@ Users can display a list of rare/notable bird species sighted in their state
 
 
 ## Wireframe
-
+<img src ="./img/Wireframe.png" alt="wireframe"/>
 
 ## Trello Planning
 https://trello.com/b/kmPxWhWo/bird-alert
