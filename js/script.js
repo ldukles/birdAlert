@@ -1,8 +1,3 @@
-// Hide Elements until prompted
-// var $p = $("p");
-// $p.hide();
-
-
 // API Settings
 // var settings = {
 //   "url": `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`,
@@ -20,11 +15,6 @@
 //   console.log(response);
 // });
 
-
-//   Variables
-
-
-
 // Element References
 const $comName = $("#comName");
 const $sciName = $("#sciName");
@@ -41,11 +31,9 @@ $form.on('submit', handleGetData);
 
 // Functions
 function handleGetData(event) {
-  // $form.on("submit", handleGetData);
   event.preventDefault();
   // data expansion to include form submissions
   const userInput = $input.val();
-  // let URL = `https://api.ebird.org/v2/data/obs/US-` + `${userInput}` + `/recent/notable?detail=simple`;
  
 
   $.ajax(URL = {
@@ -69,11 +57,6 @@ function handleGetData(event) {
       $obsDt.text(data[0].obsDt)
       $howMany.text(data[0].howMany)
       $obsValid.text(data[0].obsValid)
-      // $('main').append(`<main>"${$("data")}"</main>`)
-
-      // console.log(data)
-      // let $data = $(data.value())
-      // console.log($data.value())
       
     },
     
