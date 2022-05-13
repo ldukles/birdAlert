@@ -23,6 +23,7 @@ User can enter their state abbreviation to populate a list of rare/notable birds
 * jQuery
 * Google Fonts
 * ebird API 2.0
+* pixabay
 
 ## Features
 Users can display a list of rare/notable bird species sighted in their state by typing their state initials into a input bar.
@@ -65,3 +66,8 @@ For working on how to incorporate my key and make the api connect to the web app
 https://fossheim.io/writing/posts/css-text-gradient/
 
 For awesome CSS styling ideas!
+
+
+https://pixabay.com/images/search/binoculars/
+
+Binoculars image
