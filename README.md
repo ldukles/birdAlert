@@ -58,8 +58,10 @@ The real MVPs ^ for helping me through some issues and pointing me in the right 
 
 
 https://www.codeproject.com/Questions/854010/how-to-send-api-url-with-api-key-auth-as-header-us
+
 For working on how to incorporate my key and make the api connect to the web application
 
 
 https://fossheim.io/writing/posts/css-text-gradient/
+
 For awesome CSS styling ideas!

@@ -56,11 +56,7 @@ function handleGetData(event) {
       $obsDt.text(data[0].obsDt)
       $howMany.text(data[0].howMany)
       $obsValid.text(data[0].obsValid)
-      // $('main').append(`<main>"${$("data")}"</main>`)
 
-      // console.log(data)
-      // let $data = $(data.value())
-      // console.log($data.value())
       
     },
     
