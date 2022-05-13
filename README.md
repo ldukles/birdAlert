@@ -38,10 +38,13 @@ https://trello.com/b/kmPxWhWo/bird-alert
 Design elements implemented using HTML5, CSS3, and google fonts
 
 ## <a name="nextsteps"></a>Project Next Steps
-Use latitude and longitude to find rare bird species closest to user
-Connect weather data api (specifically wind and precipitation) to determine whether it is ideal conditions for migration
+* Add more sightings per search
+* Use latitude and longitude to find rare bird species closest to user
+* Connect weather data api (specifically wind and precipitation) to determine whether it is ideal conditions for migration.
 
 ## <a name="deployment"></a>Deployed Link
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05085374-b764-4c0b-8c80-ad7baacbcd53/deploy-status)](https://app.netlify.com/sites/bird-alert/deploys)
+
 
 
 * You can view the repository:
@@ -49,7 +52,8 @@ https://github.com/ldukles/birdAlert
 
 
 ## Works Cited:
-Paul Chapman, Julian Beard, Jacky Cheng, Bradley Hazel, Charles Co for helping through some issues and pointing me in the right direction
+Paul Chapman, Julian Beard, Bradley Mather
+The real MVPs ^ for helping me through some issues and pointing me in the right direction
 
 
 https://www.codeproject.com/Questions/854010/how-to-send-api-url-with-api-key-auth-as-header-us
