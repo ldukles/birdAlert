@@ -44,12 +44,7 @@ Design elements implemented using HTML5, CSS3, and google fonts
 * Connect weather data api (specifically wind and precipitation) to determine whether it is ideal conditions for migration.
 
 ## <a name="deployment"></a>Deployed Link
-[![Netlify Status](https://api.netlify.com/api/v1/badges/05085374-b764-4c0b-8c80-ad7baacbcd53/deploy-status)](https://app.netlify.com/sites/bird-alert/deploys)
-
-
-
-* You can view the repository:
-https://github.com/ldukles/birdAlert
+https://bird-alert.netlify.app/
 
 
 ## Works Cited:
