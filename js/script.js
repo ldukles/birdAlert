@@ -22,7 +22,7 @@ const $locName = $("#locName");
 const $obsDt = $("#obsDt");
 const $howMany = $("#howMany");
 const $obsValid = $("#obsValid");
-const $input = $(`input[type=text] [oninput="this.value = this.value.toUpperCase()"]`);
+const $input = $(`input[type=text]`);
 const $form = $("form");
 
 // Event Listeners
